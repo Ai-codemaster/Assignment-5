@@ -14,17 +14,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header id="header" class="sticky top-0 left-0 pb-6">
-      <div id="navbar" class="bg-[--header-background] pt-5 pb-6 px-[5%]">
-        <div class="container mx-auto flex justify-between">
+    <header id="header" class="sticky top-0 left-0 pb-6 md:pb-8">
+      <div
+        id="navbar"
+        class="bg-[--header-background] pt-5 pb-6 md:pb-8 px-[5%]"
+      >
+        <div class="container mx-auto flex justify-between items-center">
           <button
             class="btn text-lg sm:text-xl font-semibold text-[--text-primary] px-6 sm:px-8 bg-[--btn-bg] hover:bg-[--btn-bg]"
           >
             Blog
           </button>
-          <div class="flex items-center gap-4 hidden">
-            <img src="assets/logo.png" alt="" />
-            <h1 class="text-xl text-[--text-primary] font-semibold">
+          <div class="md:flex md:items-center md:gap-4">
+            <img class="w-8 h-8 sm:w-auto sm:h-auto" src="assets/logo.png" alt="" />
+            <h1 class="text-xl text-[--text-primary] font-semibold hidden md:block">
               Donate Bangladesh
             </h1>
           </div>
@@ -36,31 +39,43 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center gap-4 mt-6">
-        <button class="btn text-lg font-semibold px-6">Donate</button>
-        <button class="btn text-lg font-semibold px-6">History</button>
+      <div class="flex justify-center gap-4 sm:gap-6 mt-6 md:mt-8">
+        <button class="btn text-lg font-semibold px-6 sm:px-8">Donate</button>
+        <button class="btn text-lg font-semibold px-6 sm:px-8">History</button>
       </div>
     </header>
 
     <main>
-      <section class="px-[5%]">
+      <section class="px-[5%] mb-8">
         <div
-          class="container grid grid-cols-1 gap-6 mx-auto p-4 rounded-2xl border"
+          class="container grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto p-4 sm:p-5 lg:p-6 rounded-2xl border"
         >
           <div class="">
-            <img class="w-full" src="assets/noakhali.png" alt="" />
+            <img
+              class="w-full md:h-full lg:h-[385px] xl:h-[400px] 2xl:h-[410px]"
+              src="assets/noakhali.png"
+              alt=""
+            />
           </div>
-          <div class="">
-            <button class="bg-[--money-bg] py-2 px-4 mb-4 rounded-lg">
+          <div class="lg:flex lg:flex-col lg:justify-between">
+            <button
+              class="bg-[--money-bg] py-2 px-4 lg:px-0 mb-4 md:mb-3 rounded-lg lg:w-1/3 xl:w-1/4"
+            >
               <img class="inline" src="assets/coin.png" alt="" />
-              <h2 class="text-sm text-[--text-light] font-medium inline">
+              <h2
+                class="text-sm lg:text-base text-[--text-light] font-medium inline"
+              >
                 <span>6500</span> BDT
               </h2>
             </button>
-            <h2 class="text-lg text-[--text-primary] font-bold mb-4">
+            <h2
+              class="text-lg xl:text-xl text-[--text-primary] font-bold mb-4 md:mb-3"
+            >
               Donate for Flood at Noakhali, Bangladesh
             </h2>
-            <p class="text-sm text-[--text-light] font-light leading-7 mb-4">
+            <p
+              class="text-sm lg:text-base text-[--text-light] font-light leading-7 md:leading-6 xl:leading-7 mb-4 md:mb-3"
+            >
               The recent floods in Noakhali have caused significant damage to
               homes infrastructure. Your donation will help provide essential
               supplies and to those affected by this disaster. Every
@@ -71,10 +86,10 @@
             <input
               type="text"
               placeholder="Write Donation Amount"
-              class="input input-bordered w-full mb-4 text-sm"
+              class="input input-bordered w-full mb-4 md:mb-3 text-sm lg:text-base"
             />
             <button
-              class="btn text-base text-[--text-primary] font-semibold bg-[--btn-bg] hover:bg-[--btn-bg] w-full"
+              class="btn text-base lg:text-lg text-[--text-primary] font-semibold bg-[--btn-bg] hover:bg-[--btn-bg] w-full"
             >
               Donate Now
             </button>
