@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "lexend", sans-serif;
+}
+
+:root {
+  --header-background: rgb(249, 247, 243);
+  --header-scroll-background: rgba(249, 247, 243, 0.8);
+  --btn-bg: rgb(180, 244, 97);
+  --text-primary: rgb(17, 17, 17);
+  --text-light: rgb(17, 17, 17, 0.7);
+  --money-bg: rgba(17, 17, 17, 0.1);
+  --header-blur: rgba(255, 255, 255, 0.8);
+}
