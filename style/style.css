@@ -9,7 +9,7 @@
 
 :root {
   --header-background: rgb(249, 247, 243);
-  --header-scroll-background: rgba(249, 247, 243, 0.8);
+  --header-scroll-background: rgba(249, 247, 243, 0.7);
   --btn-bg: rgb(180, 244, 97);
   --text-primary: rgb(17, 17, 17);
   --text-light: rgb(17, 17, 17, 0.7);
