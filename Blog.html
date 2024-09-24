@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+
+    <header id="header" class="sticky top-0 left-0 pb-6 md:pb-8">
+      <div
+        id="navbar"
+        class="bg-[--header-background] pt-5 pb-6 md:pb-8 px-[5%]"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <button
+            id="main-page"
+            class="btn text-lg sm:text-xl font-semibold text-[--text-primary] px-6 sm:px-8 bg-[--btn-bg] hover:bg-[--btn-bg]"
+          >
+            Home
+          </button>
+          <div class="md:flex md:items-center md:gap-4">
+            <img
+              class="w-8 h-8 sm:w-auto sm:h-auto"
+              src="assets/logo.png"
+              alt=""
+            />
+            <h1
+              class="text-xl text-[--text-primary] font-semibold hidden md:block"
+            >
+              Donate Bangladesh
+            </h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="assets/coin.png" alt="" />
+            <h2 class="text-lg sm:text-xl text-[--text-light] font-medium">
+              <span>10500</span> BDT
+            </h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+
+    <main>
+      <section>
+        <div class="container px-[5%] mx-auto">
+          <div class="my-8">
+            <h1 class="text-3xl font-black">
+              ImportanrFAQ
+              <img class="w-10 h-10 inline" src="assets/source.gif" alt="" />
+            </h1>
+          </div>
+          <div class="join join-vertical w-full">
+            <!-- Question -- 1 -->
+
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                What is the Document Object Model(DOM)?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  What is the DOM? The Document Object Model (DOM) is
+                  <strong
+                    ><mark class="bg-blue-100"
+                      >a programming interface for web documents</mark
+                    ></strong
+                  >. It represents the page so that programs can change the
+                  document structure, style, and content. The DOM represents the
+                  document as nodes and objects; that way, programming languages
+                  can interact with the page.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question -- 2 -->
+
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                How do you select an element from the DOM?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  The
+                  <strong
+                    ><mark class="bg-blue-100"
+                      >getElementById() method of the Document interface returns
+                      an Element object representing the element whose id
+                      property matches the specified string</mark
+                    ></strong
+                  >. Since element IDs are required to be unique if specified,
+                  they're a useful way to get access to a specific element
+                  quickly.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question -- 3 -->
+
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                What is event delegation in the context of the DOM, and why is
+                it useful?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Event delegation refers to
+                  <strong
+                    ><mark class="bg-blue-100"
+                      >the process of using event propagation (bubbling) to
+                      handle events at a higher level in the DOM than the
+                      element on which the event originated</mark
+                    ></strong
+                  >. It allows us to attach a single event listener for elements
+                  that exist now or in the future.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question -- 4 -->
+
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                How do you manipulate an element's attributes and styles using
+                the DOM?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Changing an element's style (CSS) attributes is one of the
+                  ways in which the DOM can be used. For example, in the code
+                  below,
+                  <strong
+                    ><mark class="bg-blue-100"
+                      >the onfocus event handler method is used to change the
+                      <input /> element's style when the user clicks inside
+                      it</mark
+                    ></strong
+                  >. When this event occurs, the element's background color will
+                  change to purple.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main Section End -->
+
+    <script src="js/blog.js"></script>
+  </body>
+</html>

@@ -1,3 +1,4 @@
+// Donate and History button edit
 document
   .getElementById("show-donation-form")
   .addEventListener("click", function () {
@@ -9,3 +10,9 @@ document
   .addEventListener("click", function () {
     showSectionById("donation-history");
   });
+
+// Blog button click
+
+document.getElementById("block-page").addEventListener("click", function () {
+  window.location.href = "/blog.html";
+});
