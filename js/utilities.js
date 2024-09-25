@@ -7,6 +7,24 @@ function showSectionById(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
+// click button and change background
+
+function changeBtnBgById(donateBtn, historyBtn) {
+  document
+    .getElementById(donateBtn)
+    .classList.add("bg-[--btn-bg]", "hover:bg-[--btn-bg]");
+  document
+    .getElementById(donateBtn)
+    .classList.remove("bg-white", "hover:bg-white");
+
+  document
+    .getElementById(historyBtn)
+    .classList.add("bg-white", "hover:bg-white");
+  document
+    .getElementById(historyBtn)
+    .classList.remove("bg-[--btn-bg]", "hover:bg-[--btn-bg]");
+}
+
 // input field and text field value string to number convert function
 
 function getInputFieldValueById(id) {

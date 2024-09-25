@@ -16,54 +16,13 @@ document
 document
   .getElementById("show-donation-history")
   .addEventListener("click", function () {
-    document
-      .getElementById("show-donation-history")
-      .classList.add("bg-[--btn-bg]");
-    document
-      .getElementById("show-donation-history")
-      .classList.add("hover:bg-[--btn-bg]");
-    document
-      .getElementById("show-donation-history")
-      .classList.remove("bg-white");
-    document
-      .getElementById("show-donation-history")
-      .classList.remove("hover:bg-white");
-    document.getElementById("show-donation-form").classList.add("bg-white");
-    document
-      .getElementById("show-donation-form")
-      .classList.add("hover:bg-white");
-    document
-      .getElementById("show-donation-form")
-      .classList.remove("bg-[--btn-bg]");
-    document
-      .getElementById("show-donation-form")
-      .classList.remove("hover:bg-[--btn-bg]");
+    changeBtnBgById("show-donation-history", "show-donation-form");
   });
 
 document
   .getElementById("show-donation-form")
   .addEventListener("click", function () {
-    document
-      .getElementById("show-donation-form")
-      .classList.add("bg-[--btn-bg]");
-    document
-      .getElementById("show-donation-form")
-      .classList.add("hover:bg-[--btn-bg]");
-    document
-      .getElementById("show-donation-history")
-      .classList.remove("bg-[--btn-bg]");
-    document
-      .getElementById("show-donation-history")
-      .classList.remove("hover:bg-[--btn-bg]");
-    document.getElementById("show-donation-history").classList.add("bg-white");
-    document
-      .getElementById("show-donation-history")
-      .classList.add("hover:bg-white");
-    document.getElementById("show-donation-form").classList.add("bg-white");
-    document
-      .getElementById("show-donation-form")
-      .classList.remove("hover:bg-white");
-    document.getElementById("show-donation-form").classList.remove("bg-white");
+    changeBtnBgById("show-donation-form", "show-donation-history");
   });
 
 // Blog button click
@@ -169,6 +128,23 @@ document
 
     document.getElementById("account-balance").innerText = newAccountBalance;
     document.getElementById("amount-noakhali").innerText = newAmountNoakhali;
+
+    // Add donation history
+
+    const currentDate = new Date();
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+          <div class="p-6 sm:px-16 mb-4 bg-gray-100 rounded-xl border-gray-400 border-[1px] text-center inline-block">
+            <h2 class="font-bold text-sm md:text-base">
+              ${donateAmountNoakhali} Taka is Donate for Flood at Noakhali,
+              Bangladesh
+            </h2">
+            <p class="text-xs md:text-sm text-[--text-light-2] font-light mt-2">${currentDate}</p>
+          </div>
+        `;
+
+    document.getElementById("history-container").appendChild(div);
   });
 
 // donate money feni

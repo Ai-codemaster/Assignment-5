@@ -13,6 +13,7 @@
   --btn-bg: rgb(180, 244, 97);
   --text-primary: rgb(17, 17, 17);
   --text-light: rgb(17, 17, 17, 0.7);
+  --text-light-2: rgb(17, 17, 17, 0.6);
   --money-bg: rgba(17, 17, 17, 0.1);
   --header-blur: rgba(255, 255, 255, 0.8);
 }
