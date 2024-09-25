@@ -28,12 +28,14 @@ function changeBtnBgById(donateBtn, historyBtn) {
 // input field and text field value string to number convert function
 
 function getInputFieldValueById(id) {
+  // return parseFloat(document.getElementById(id).value);
   const inputValue = document.getElementById(id).value;
   const inputNumber = parseFloat(inputValue);
   return inputNumber;
 }
 
 function getTextFieldValueById(id) {
+  // return parseFloat(document.getElementById(id).innerText);
   const textValue = document.getElementById(id).innerText;
   const textNumber = parseFloat(textValue);
   return textNumber;

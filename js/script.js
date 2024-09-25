@@ -28,7 +28,7 @@ document
 // Blog button click
 
 document.getElementById("block-page").addEventListener("click", function () {
-  window.location.href = "/blog.html";
+  window.location.href = "blog.html";
 });
 
 // Noakhali Donate Button
