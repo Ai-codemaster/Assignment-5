@@ -22,7 +22,8 @@
         class="bg-[--header-background] pt-5 pb-6 md:pb-8 px-[5%]"
       >
         <div class="container mx-auto flex justify-between items-center">
-          <button id="block-page"
+          <button
+            id="block-page"
             class="btn text-lg sm:text-xl font-semibold text-[--text-primary] px-6 sm:px-8 bg-[--btn-bg] hover:bg-[--btn-bg]"
           >
             Blog
@@ -42,20 +43,20 @@
           <div class="flex items-center gap-2">
             <img src="assets/coin.png" alt="" />
             <h2 class="text-lg sm:text-xl text-[--text-light] font-medium">
-              <span>10500</span> BDT
+              <span id="account-balance">10500</span> BDT
             </h2>
           </div>
         </div>
         <div class="flex justify-center gap-4 sm:gap-6 mt-6 md:mt-8">
           <button
             id="show-donation-form"
-            class="btn text-lg font-semibold px-6 sm:px-8"
+            class="btn text-lg font-semibold px-6 sm:px-8 bg-[--btn-bg] hover:bg-[--btn-bg] border-gray-200"
           >
             Donate
           </button>
           <button
             id="show-donation-history"
-            class="btn text-lg font-semibold px-6 sm:px-8"
+            class="btn text-lg font-semibold px-6 sm:px-8 bg-white hover:bg-white border-gray-200"
           >
             History
           </button>
@@ -90,7 +91,7 @@
                 <h2
                   class="text-sm lg:text-base text-[--text-light] font-medium inline"
                 >
-                  <span>6500</span> BDT
+                  <span id="amount-noakhali">6500</span> BDT
                 </h2>
               </button>
               <h2
@@ -109,11 +110,13 @@
                 the lives of those in need.
               </p>
               <input
+                id="donate-amount-noakhali"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full mb-4 md:mb-3 text-sm lg:text-base"
               />
               <button
+                id="donate-noakhali"
                 class="btn text-base lg:text-lg text-[--text-primary] font-semibold bg-[--btn-bg] hover:bg-[--btn-bg] w-full"
               >
                 Donate Now
@@ -143,7 +146,7 @@
                 <h2
                   class="text-sm lg:text-base text-[--text-light] font-medium inline"
                 >
-                  <span>6500</span> BDT
+                  <span id="amount-feni">6500</span> BDT
                 </h2>
               </button>
               <h2
@@ -164,11 +167,13 @@
                 to assist those in urgent need.
               </p>
               <input
+                id="donate-amount-feni"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full mb-4 md:mb-3 text-sm lg:text-base"
               />
               <button
+                id="donate-feni"
                 class="btn text-base lg:text-lg text-[--text-primary] font-semibold bg-[--btn-bg] hover:bg-[--btn-bg] w-full"
               >
                 Donate Now
@@ -198,7 +203,7 @@
                 <h2
                   class="text-sm lg:text-base text-[--text-light] font-medium inline"
                 >
-                  <span>6500</span> BDT
+                  <span id="amount-quota">6500</span> BDT
                 </h2>
               </button>
               <h2
@@ -220,11 +225,13 @@
                 brave individuals in their time of need.
               </p>
               <input
+                id="donate-amount-quota"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full mb-4 md:mb-3 text-sm lg:text-base"
               />
               <button
+                id="donate-quota"
                 class="btn text-base lg:text-lg text-[--text-primary] font-semibold bg-[--btn-bg] hover:bg-[--btn-bg] w-full"
               >
                 Donate Now
@@ -232,10 +239,39 @@
             </div>
           </div>
         </section>
+
+        <div class=" p-6 bg-gray-100 rounded-xl border-gray-400 border-[1px] text-center">
+          <h2 class="mb-2">
+            ${donateAmountNoakhali} Taka is Donate for Flood at Noakhali,
+            Bangladesh
+          </h2>
+        </div>
       </section>
       <section id="donation-history" class="text-center hidden px-[5%]">
-        <div class="container mx-auto pb-8">
-          <h1>My name is Md ASHRAFUL Islam</h1>
+        <div id="history-container" class="container mx-auto pb-8"></div>
+      </section>
+
+      <section>
+        <div
+          id="popup"
+          class="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center px-[5%] hidden"
+        >
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full"
+          >
+            <h2 class="text-3xl font-bold text-gray-800">Congrats!</h2>
+            <div class="mt-4">
+              <img class="mx-auto w-12 h-12" src="assets/coin.png" alt="" />
+            </div>
+            <p class="mt-4 text-gray-600">You Have Donated for Humankind</p>
+            <p class="font-bold text-xl text-gray-800 mt-2">Successfully</p>
+            <button
+              id="close-btn"
+              class="btn mt-6 bg-[--btn-bg] px-4 py-2 rounded-xl text-gray-700 hover:bg-[--btn-bg]"
+            >
+              Close Confirmation
+            </button>
+          </div>
         </div>
       </section>
     </main>
