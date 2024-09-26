@@ -25,12 +25,6 @@ document
     changeBtnBgById("show-donation-form", "show-donation-history");
   });
 
-// Blog button click
-
-document.getElementById("blog-page").addEventListener("click", function () {
-  window.location.href = "blog.html";
-});
-
 // Noakhali Donate Button
 document
   .getElementById("donate-noakhali")
