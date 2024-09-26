@@ -129,10 +129,10 @@ document
 
     const div = document.createElement("div");
     div.innerHTML = `
-          <div class="p-6 sm:px-16 mb-4 bg-gray-100 rounded-xl border-gray-400 border-[1px] text-center inline-block">
+          <div class="p-6 sm:px-16 mb-4 bg-gray-100 rounded-xl border-gray-400 border-[1px] text-center">
             <h2 class="font-bold text-sm md:text-base">
               ${donateAmountNoakhali} Taka is Donate for Flood at Noakhali,
-              Bangladesh
+              Bangladesh.
             </h2">
             <p class="text-xs md:text-sm text-[--text-light-2] font-light mt-2">${currentDate}</p>
           </div>
@@ -161,6 +161,22 @@ document.getElementById("donate-feni").addEventListener("click", function () {
 
   document.getElementById("account-balance").innerText = newAccountBalance;
   document.getElementById("amount-feni").innerText = newAmountFeni;
+
+  // Add donation history
+
+  const currentDate = new Date();
+
+  const div = document.createElement("div");
+  div.innerHTML = `
+        <div class="p-6 sm:px-16 mb-4 bg-gray-100 rounded-xl border-gray-400 border-[1px] text-center">
+          <h2 class="font-bold text-sm md:text-base">
+            ${donateAmountFeni} Taka is Donated for Flood Relief in Feni, Bangladesh.
+          </h2">
+          <p class="text-xs md:text-sm text-[--text-light-2] font-light mt-2">${currentDate}</p>
+        </div>
+      `;
+
+  document.getElementById("history-container").appendChild(div);
 });
 
 // donate money quota
@@ -183,4 +199,20 @@ document.getElementById("donate-quota").addEventListener("click", function () {
 
   document.getElementById("account-balance").innerText = newAccountBalance;
   document.getElementById("amount-quota").innerText = newAmountQuota;
+
+  // Add donation history
+
+  const currentDate = new Date();
+
+  const div = document.createElement("div");
+  div.innerHTML = `
+        <div class="p-6 sm:px-16 mb-4 bg-gray-100 rounded-xl border-gray-400 border-[1px] text-center">
+          <h2 class="font-bold text-sm md:text-base">
+            ${donateAmountQuota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.
+          </h2">
+          <p class="text-xs md:text-sm text-[--text-light-2] font-light mt-2">${currentDate}</p>
+        </div>
+      `;
+
+  document.getElementById("history-container").appendChild(div);
 });
