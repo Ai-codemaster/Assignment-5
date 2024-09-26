@@ -30,6 +30,7 @@ function changeBtnBgById(donateBtn, historyBtn) {
 function getInputFieldValueById(id) {
   // return parseFloat(document.getElementById(id).value);
   const inputValue = document.getElementById(id).value;
+  console.log(inputValue);
   const inputNumber = parseFloat(inputValue);
   return inputNumber;
 }
